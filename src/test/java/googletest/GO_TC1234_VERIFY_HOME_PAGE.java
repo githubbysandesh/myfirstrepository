@@ -1,27 +1,38 @@
 package googletest;
 
+import java.io.IOException;
+import java.time.Duration;
 
-
+import org.apache.poi.EncryptedDocumentException;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.annotations.DataProvider;
+@Listeners(googletest.Listener.class)
 
+//@Test(dataProvider="MyDataProvider",dataProviderClass=googletest.DataProvider.class)
 public class GO_TC1234_VERIFY_HOME_PAGE extends BaseTest{
 	
 
 	@Test(priority=-1)
-	public void verifyGooglePageOpen() throws InterruptedException {
-		String exp = "Google";
-		Thread.sleep(1000);
+	public void verifyGooglePageOpen() throws InterruptedException, EncryptedDocumentException, IOException {
+		String exp = UtilityClass.readDataFromExcel(0, 0);
+		UtilityClass.waitTime(1000);
 		String act = driver.getTitle();
-		Thread.sleep(1000);
+		UtilityClass.waitTime(1000);
+	
 		Assert.assertEquals(exp, act , "Assert is fail");
 	}
 	@Test(priority=1)
-	public void verifyPagename() throws InterruptedException {
+	public void verifyPagename() throws InterruptedException, IOException {
 		boolean act= home.VrifyLogo();
-		Thread.sleep(1000);
+		UtilityClass.waitTime(1000);
 		boolean exp = true;
-		Thread.sleep(1000);
+		UtilityClass.waitTime(1000);
 		Assert.assertEquals(act, exp, "Assert is fail");
 		
 	}
@@ -29,9 +40,9 @@ public class GO_TC1234_VERIFY_HOME_PAGE extends BaseTest{
 	@Test(priority=2)
 	public void verifyGoogleTab() throws InterruptedException {
 		boolean act= home.VrifyGoogleTabPreset();
-		Thread.sleep(1000);
+		UtilityClass.waitTime(1000);
 		boolean exp = true;
-		Thread.sleep(1000);
+		UtilityClass.waitTime(1000);
 		Assert.assertEquals(act, exp, "Assert is fail");
 		
 	}
@@ -40,7 +51,7 @@ public class GO_TC1234_VERIFY_HOME_PAGE extends BaseTest{
 		String act= home.VrifyGoolgeTabAcceptValue();
 		Thread.sleep(1000);
 		String exp = "textarea";
-		Thread.sleep(1000);
+		UtilityClass.waitTime(1000);
 		Assert.assertEquals(act, exp, "Asssert is fail");	
 	}
 	@Test(priority=4)
@@ -48,5 +59,7 @@ public class GO_TC1234_VERIFY_HOME_PAGE extends BaseTest{
 	{
 		home.clickOnKey();
 		}
+	
+	
 		
 }

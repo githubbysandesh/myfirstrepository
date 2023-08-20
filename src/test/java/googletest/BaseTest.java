@@ -1,5 +1,8 @@
 package googletest;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,10 +14,11 @@ import googlepage.BasePage;
 import googlepage.HomePage;
 
 public class BaseTest extends BasePage {
-
+	
 	@BeforeClass
-	public void setup() throws InterruptedException {
-		/*
+	public void setup() throws InterruptedException, IOException {
+		MyFile= new FileInputStream("E:\\New folder2\\google\\MyFile.properties");
+		obj.load(MyFile);
 		//1. create object of ChromeOptions class
 		ChromeOptions opt= new ChromeOptions();
 		//2. using ChromeOptions object select desired option
@@ -23,13 +27,14 @@ public class BaseTest extends BasePage {
 		//opt.addArguments("start-maximized");
 		opt.addArguments("disable-infobars");
 		//3. pass the object as a parameter in chrome driver
-		*/
-		System.setProperty("webdriver.chrome.driver","C:\\sandesh\\chromedriver\\109\\chromedriver.exe");
-		driver=new ChromeDriver();
-		driver.get("https://www.google.com/search");
+		
+		System.setProperty(obj.getProperty("PARAMETER1"),obj.getProperty("PARAMETER2"));
+		driver=new ChromeDriver(opt);
+		driver.get(obj.getProperty("URL"));
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 		driver.manage().window().maximize();
 		Thread.sleep(1000);
+		
 	
 	}
 	@BeforeMethod

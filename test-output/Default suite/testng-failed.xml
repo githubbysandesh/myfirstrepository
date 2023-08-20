@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="googletest.HomeTest">
+      <class name="googletest.GO_TC1234_VERIFY_HOME_PAGE">
         <methods>
           <include name="setup"/>
-          <include name="selectWord"/>
           <include name="createObjectPages"/>
+          <include name="fblogin" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- googletest.HomeTest -->
+      </class> <!-- googletest.GO_TC1234_VERIFY_HOME_PAGE -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

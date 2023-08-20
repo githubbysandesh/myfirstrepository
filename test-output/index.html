@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-1051791477\testng-customsuite.xml</span>
+                    <span>C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-1603236549\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="googletest.HomeTest" class="method navigator-link" hash-for-method="selectWord">selectWord</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,22 +102,27 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="googletest.HomeTest" class="method navigator-link" hash-for-method="verifyGoogleAccept">verifyGoogleAccept</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="googletest.GO_TC1234_VERIFY_HOME_PAGE" class="method navigator-link" hash-for-method="selectWord">selectWord</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="googletest.HomeTest" class="method navigator-link" hash-for-method="verifyGooglePageOpen">verifyGooglePageOpen</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="googletest.GO_TC1234_VERIFY_HOME_PAGE" class="method navigator-link" hash-for-method="verifyGoogleAccept">verifyGoogleAccept</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="googletest.HomeTest" class="method navigator-link" hash-for-method="verifyGoogleTab">verifyGoogleTab</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="googletest.GO_TC1234_VERIFY_HOME_PAGE" class="method navigator-link" hash-for-method="verifyGooglePageOpen">verifyGooglePageOpen</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="googletest.HomeTest" class="method navigator-link" hash-for-method="verifyPagename">verifyPagename</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="googletest.GO_TC1234_VERIFY_HOME_PAGE" class="method navigator-link" hash-for-method="verifyGoogleTab">verifyGoogleTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="googletest.GO_TC1234_VERIFY_HOME_PAGE" class="method navigator-link" hash-for-method="verifyPagename">verifyPagename</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -146,10 +137,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">googletest.HomeTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">googletest.GO_TC1234_VERIFY_HOME_PAGE</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -157,69 +148,8 @@
                   <a name="selectWord">
                   </a> <!-- selectWord -->
                   <span class="method-name">selectWord</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.43.62&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.25 (771113d280dd..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:53712}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 837f8abf945822ef4aee9106651262cd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-	at googlepage.HomePage.clickOnKey(HomePage.java:54)
-	at googletest.HomeTest.selectWord(HomeTest.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">googletest.HomeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="verifyGoogleAccept">
@@ -253,7 +183,7 @@ Session ID: 837f8abf945822ef4aee9106651262cd
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-1051791477\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-1603236549\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -262,7 +192,7 @@ Session ID: 837f8abf945822ef4aee9106651262cd
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;googletest.HomeTest&quot;/&gt;
+      &lt;class name=&quot;googletest.GO_TC1234_VERIFY_HOME_PAGE&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -305,29 +235,29 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'selectWord')
-data.setCell(0, 2, 'googletest.HomeTest')
-data.setCell(0, 3, 7859);
+data.setCell(0, 2, 'googletest.GO_TC1234_VERIFY_HOME_PAGE')
+data.setCell(0, 3, 31909);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyPagename')
-data.setCell(1, 2, 'googletest.HomeTest')
-data.setCell(1, 3, 6164);
+data.setCell(1, 2, 'googletest.GO_TC1234_VERIFY_HOME_PAGE')
+data.setCell(1, 3, 6180);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyGoogleAccept')
-data.setCell(2, 2, 'googletest.HomeTest')
-data.setCell(2, 3, 2251);
+data.setCell(2, 1, 'verifyGooglePageOpen')
+data.setCell(2, 2, 'googletest.GO_TC1234_VERIFY_HOME_PAGE')
+data.setCell(2, 3, 4648);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyGoogleTab')
-data.setCell(3, 2, 'googletest.HomeTest')
-data.setCell(3, 3, 2192);
+data.setCell(3, 2, 'googletest.GO_TC1234_VERIFY_HOME_PAGE')
+data.setCell(3, 3, 2058);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyGooglePageOpen')
-data.setCell(4, 2, 'googletest.HomeTest')
-data.setCell(4, 3, 2103);
+data.setCell(4, 1, 'verifyGoogleAccept')
+data.setCell(4, 2, 'googletest.GO_TC1234_VERIFY_HOME_PAGE')
+data.setCell(4, 3, 2049);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -338,6 +268,43 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyGooglePageOpen</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">waiting for 1000 milisec</span>
+                <span class="reporter-method-output">waiting for 1000 milisec</span>
+                <span class="reporter-method-output">verifyGooglePageOpenTEST IS SUCESSFUL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyGoogleTab</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">waiting for 1000 milisec</span>
+                <span class="reporter-method-output">waiting for 1000 milisec</span>
+                <span class="reporter-method-output">verifyGoogleTabTEST IS SUCESSFUL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyPagename</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">waiting for 1000 milisec</span>
+                <span class="reporter-method-output">waiting for 1000 milisec</span>
+                <span class="reporter-method-output">verifyPagenameTEST IS SUCESSFUL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">selectWord</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">selectWordTEST IS SUCESSFUL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyGoogleAccept</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">waiting for 1000 milisec</span>
+                <span class="reporter-method-output">verifyGoogleAcceptTEST IS SUCESSFUL</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -353,52 +320,50 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">googletest.HomeTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">googletest.GO_TC1234_VERIFY_HOME_PAGE</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">createObjectPages</span>
-                <span class="method-start">29420 ms</span>
+                <span class="method-start">18898 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyGooglePageOpen</span>
-                <span class="method-start">29717 ms</span>
+                <span class="method-start">18953 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">createObjectPages</span>
-                <span class="method-start">31837 ms</span>
+                <span class="method-start">23617 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPagename</span>
-                <span class="method-start">31840 ms</span>
+                <span class="method-start">23618 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">createObjectPages</span>
-                <span class="method-start">38013 ms</span>
+                <span class="method-start">29806 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyGoogleTab</span>
-                <span class="method-start">38015 ms</span>
+                <span class="method-start">29807 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">createObjectPages</span>
-                <span class="method-start">40211 ms</span>
+                <span class="method-start">31869 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyGoogleAccept</span>
-                <span class="method-start">40212 ms</span>
+                <span class="method-start">31870 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">createObjectPages</span>
-                <span class="method-start">42471 ms</span>
+                <span class="method-start">33924 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">selectWord</span>
-                <span class="method-start">42472 ms</span>
+                <span class="method-start">33926 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

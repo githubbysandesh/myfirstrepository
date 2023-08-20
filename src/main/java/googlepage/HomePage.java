@@ -10,16 +10,18 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends BasePage{
-	
+	//variable
 	@FindBy(xpath="//img[@class='lnXdpd']") WebElement googleLogo;
 	@FindBy(id="APjFqb") WebElement googleTab;
 	@FindBy(xpath="(//div[@id='Alh6id'])//ul//li") List<WebElement> all;
 	
+	//contructor
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	
-
+	//method
+	
 	public boolean VrifyLogo() throws InterruptedException {
 	boolean v= googleLogo.isDisplayed();
 	Thread.sleep(4000);
@@ -38,34 +40,23 @@ public class HomePage extends BasePage{
 		}
 
 	public void clickOnKey() throws InterruptedException {
-		try {
-			googleTab.sendKeys("selenium");
-			Thread.sleep(3000);	
-		}
-		catch(StaleElementReferenceException e){
-			googleTab.sendKeys("selenium");
-			Thread.sleep(3000);	
-		}
-
+		
+		googleTab.sendKeys("selenium");
 		System.out.print(all);
 		String Expected= "selenium download";
-		
-		for(WebElement s:all) {
-			String Actual = s.getText();
-			Thread.sleep(1000);
-			System.out.print(Actual);
-			if(Expected.equalsIgnoreCase(Actual));
-		
-				s.click();
-			
-		
-		
-			
-			
+		try {
+			for(WebElement s:all) {
+				String Actual = s.getText();
+				Thread.sleep(1000);
+				System.out.print(Actual);
+				if(Expected.equalsIgnoreCase(Actual));
+			    s.click();
+				}
 		}
-		
-			
+		catch(StaleElementReferenceException e){
+			System.out.println("Exception handle");
+		}
 
-	
-	}
+		
+		}
 }

@@ -9,65 +9,14 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">50,558</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">65,873</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">googletest.HomeTest</td><td><a href="#m0">selectWord</a></td><td rowspan="1">1691123238856</td><td rowspan="1">7859</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">googletest.HomeTest</td><td><a href="#m1">verifyGoogleAccept</a></td><td rowspan="1">1691123236596</td><td rowspan="1">2251</td></tr><tr class="passedeven"><td><a href="#m2">verifyGooglePageOpen</a></td><td rowspan="1">1691123226101</td><td rowspan="1">2103</td></tr><tr class="passedeven"><td><a href="#m3">verifyGoogleTab</a></td><td rowspan="1">1691123234399</td><td rowspan="1">2192</td></tr><tr class="passedeven"><td><a href="#m4">verifyPagename</a></td><td rowspan="1">1691123228224</td><td rowspan="1">6164</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">googletest.GO_TC1234_VERIFY_HOME_PAGE</td><td><a href="#m0">selectWord</a></td><td rowspan="1">1692471250008</td><td rowspan="1">31909</td></tr><tr class="passedeven"><td><a href="#m1">verifyGoogleAccept</a></td><td rowspan="1">1692471247952</td><td rowspan="1">2049</td></tr><tr class="passedeven"><td><a href="#m2">verifyGooglePageOpen</a></td><td rowspan="1">1692471235035</td><td rowspan="1">4648</td></tr><tr class="passedeven"><td><a href="#m3">verifyGoogleTab</a></td><td rowspan="1">1692471245889</td><td rowspan="1">2058</td></tr><tr class="passedeven"><td><a href="#m4">verifyPagename</a></td><td rowspan="1">1692471239700</td><td rowspan="1">6180</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">googletest.HomeTest#selectWord</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LENOVO-PC&apos;, ip: &apos;192.168.43.62&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;17&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.25 (771113d280dd..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:53712}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 837f8abf945822ef4aee9106651262cd
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-	at googlepage.HomePage.clickOnKey(HomePage.java:54)
-	at googletest.HomeTest.selectWord(HomeTest.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">googletest.HomeTest#verifyGoogleAccept</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">googletest.HomeTest#verifyGooglePageOpen</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">googletest.HomeTest#verifyGoogleTab</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">googletest.HomeTest#verifyPagename</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">googletest.GO_TC1234_VERIFY_HOME_PAGE#selectWord</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">selectWordTEST IS SUCESSFUL</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">googletest.GO_TC1234_VERIFY_HOME_PAGE#verifyGoogleAccept</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">waiting for 1000 milisec<br/>verifyGoogleAcceptTEST IS SUCESSFUL</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">googletest.GO_TC1234_VERIFY_HOME_PAGE#verifyGooglePageOpen</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">waiting for 1000 milisec<br/>waiting for 1000 milisec<br/>verifyGooglePageOpenTEST IS SUCESSFUL</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">googletest.GO_TC1234_VERIFY_HOME_PAGE#verifyGoogleTab</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">waiting for 1000 milisec<br/>waiting for 1000 milisec<br/>verifyGoogleTabTEST IS SUCESSFUL</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">googletest.GO_TC1234_VERIFY_HOME_PAGE#verifyPagename</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">waiting for 1000 milisec<br/>waiting for 1000 milisec<br/>verifyPagenameTEST IS SUCESSFUL</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
